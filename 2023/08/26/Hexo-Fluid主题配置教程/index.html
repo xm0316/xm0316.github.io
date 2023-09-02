@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://xm0316.github.io/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.assets/631b13ff2befbd4299cbfa12e08aae90.png">
 <meta property="og:image" content="https://xm0316.github.io/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.assets/9a363f6191b2530da0a03c422ce855cc.png">
 <meta property="article:published_time" content="2023-08-25T22:46:13.000Z">
-<meta property="article:modified_time" content="2023-09-02T05:32:02.788Z">
+<meta property="article:modified_time" content="2023-09-02T23:03:06.479Z">
 <meta property="article:author" content="Lee">
 <meta property="article:tag" content="Blog">
 <meta property="article:tag" content="Hexo">
@@ -312,18 +312,18 @@
 <h3 id="2-安装"><a href="#2-安装" class="headerlink" title="2. 安装"></a>2. 安装</h3><p>安装的话，github的README.md文档写的很清楚了</p>
 <p>这里直接复制粘贴一下：</p>
 <p><strong>方式一：</strong></p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install <span class="hljs-comment">--save hexo-theme-fluid</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install --save hexo-theme-fluid<br></code></pre></td></tr></table></figure>
 
 <p>然后在博客目录下创建 <code>_config.fluid.yml</code>，将主题的 <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml">_config.yml</a> 内容复制进去。</p>
 <p><strong>方式二：</strong></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-string">git</span> <span class="hljs-string">clone</span> <span class="hljs-string">https://github.com/fluid-dev/hexo-theme-fluid.git</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">git <span class="hljs-built_in">clone</span> https://github.com/fluid-dev/hexo-theme-fluid.git<br></code></pre></td></tr></table></figure>
 
 <p>或者直接下载压缩文件，解压后放到themes目录，将解压出来的文件夹命名为<code>fluid</code></p>
 <h3 id="3-修改配置"><a href="#3-修改配置" class="headerlink" title="3. 修改配置"></a>3. 修改配置</h3><p>修改 Hexo 博客目录中的 <code>_config.yml</code>：</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">theme:</span> fluid  <span class="hljs-meta"># 指定主题</span><br><span class="hljs-symbol">language:</span> <span class="hljs-built_in">zh</span>-CN  <span class="hljs-meta"># 指定语言，会影响主题显示的语言，按需修改</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span>  <span class="hljs-comment"># 指定主题</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span>  <span class="hljs-comment"># 指定语言，会影响主题显示的语言，按需修改</span><br></code></pre></td></tr></table></figure>
 
 <h3 id="4-创建页"><a href="#4-创建页" class="headerlink" title="4. 创建页"></a>4. 创建页</h3><p>首次使用主题的「关于页」需要手动创建：</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> about<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo new page about<br></code></pre></td></tr></table></figure>
 
 <p>创建成功后，编辑博客目录下 <code>/source/about/index.md</code>，添加 <code>layout</code> 属性。</p>
 <p>修改后的文件示例如下：</p>
@@ -390,8 +390,9 @@
 <h3 id="6-config-yml"><a href="#6-config-yml" class="headerlink" title="6. _config.yml"></a>6. _config.yml</h3><p>这里的注释是英文的，可能看起来不是那么方便，这里主要是两个地方需要修改，其他直接默认就可以了</p>
 <ol>
 <li>最开头的网站信息<br> <img src="/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.assets/631b13ff2befbd4299cbfa12e08aae90.png" srcset="https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/loading.gif" lazyload alt="image-20210607143832179"></li>
-<li>以及最末尾的部署设置<br> <img src="/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.assets/9a363f6191b2530da0a03c422ce855cc.png" srcset="https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/loading.gif" lazyload alt="image-20210607143902182"><br> 这里可以配置二次元人物，具体就到网上搜索就好了~ 搜<code>live2 看板娘</code><h3 id="7-最后"><a href="#7-最后" class="headerlink" title="7. 最后"></a>7. 最后</h3>算是一个傻瓜式教程了。。。。省略了非常多的步骤。next听说可玩度很高，配置之后网页非常好看（但我不喜欢又关我什么事hhh），next的贡献者非常多，所以next主题的维护以及更新等等方面都非常地强。<br>但是！fluid的简约风真的非常nice！！！安利一波<h3 id="8-小彩蛋"><a href="#8-小彩蛋" class="headerlink" title="8. 小彩蛋"></a>8. 小彩蛋</h3>对了，在设置banner_img的时候，由于banner比较大，所以把图片放大之后非常地模糊。。。所以这个也让我浪费了非常多时间在找高清图以及增强图片清晰度的方法</li>
+<li>以及最末尾的部署设置<br> <img src="/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.assets/9a363f6191b2530da0a03c422ce855cc.png" srcset="https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/loading.gif" lazyload alt="image-20210607143902182"><br> 这里可以配置二次元人物，具体就到网上搜索就好了~ 搜<code>live2 看板娘</code><h3 id="7-最后"><a href="#7-最后" class="headerlink" title="7. 最后"></a>7. 最后</h3>算是一个傻瓜式教程了。。。。省略了非常多的步骤。next听说可玩度很高，配置之后网页非常好看（但我不喜欢又关我什么事hhh），next的贡献者非常多，所以next主题的维护以及更新等等方面都非常地强。<br>但是！fluid的简约风真的非常nice！！！安利一波</li>
 </ol>
+<h3 id="8-小彩蛋"><a href="#8-小彩蛋" class="headerlink" title="8. 小彩蛋"></a>8. 小彩蛋</h3><p>对了，在设置banner_img的时候，由于banner比较大，所以把图片放大之后非常地模糊。。。所以这个也让我浪费了非常多时间在找高清图以及增强图片清晰度的方法</p>
 <ul>
 <li>增强图片清晰度的方法：<ul>
 <li>  用ps：emmm…难度有点大，ps小白表示不想</li>
@@ -508,8 +509,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/24/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/08/24/hexo/" title="Hexo">
+                        <span class="hidden-mobile">Hexo</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

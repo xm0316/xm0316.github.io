@@ -23,12 +23,14 @@
 <meta property="og:site_name" content="Lee_Blog">
 <meta property="og:description" content="一些命令和插件使用规则.">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xm0316.github.io/img/example.png">
 <meta property="article:published_time" content="2023-08-23T22:46:13.000Z">
-<meta property="article:modified_time" content="2023-09-02T05:43:32.584Z">
+<meta property="article:modified_time" content="2023-09-02T23:18:45.453Z">
 <meta property="article:author" content="Lee">
 <meta property="article:tag" content="Blog">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xm0316.github.io/img/example.png">
   
   
   
@@ -192,7 +194,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/banner.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/banner.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -277,7 +279,7 @@
                 <p>一些命令和插件使用规则.</p>
 <span id="more"></span>
 
-<h2 id="hexo-基本命令"><a href="#hexo-基本命令" class="headerlink" title="hexo 基本命令"></a>hexo 基本命令</h2><p>让我们先认识一下 Hexo 的一些命令，再对博客进行个性化配置。先进入 Hexo 博客安装的文件夹目录 :</p>
+<h1 id="hexo-基本命令"><a href="#hexo-基本命令" class="headerlink" title="hexo 基本命令"></a>hexo 基本命令</h1><p>让我们先认识一下 Hexo 的一些命令，再对博客进行个性化配置。先进入 Hexo 博客安装的文件夹目录 :</p>
 <ul>
 <li><p><code>hexo clean</code>: 清除生成的静态文件和缓存；</p>
 </li>
@@ -313,7 +315,7 @@
 
 <p>读者们可以尝试在本地运行一下 <code>preview</code> 命令，浏览器将自动打开 <code>localhost</code>，你将看到你的初始博客的样子。在后续的配置中，你可以随时运行该命令来查看你的修改所起的效果。</p>
 <h1 id="jsDelivr"><a href="#jsDelivr" class="headerlink" title="jsDelivr"></a>jsDelivr</h1><h2 id="通过jsDelivr引用资源"><a href="#通过jsDelivr引用资源" class="headerlink" title="通过jsDelivr引用资源"></a>通过jsDelivr引用资源</h2><p>使用方法：</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">[https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>]你的用户名<span class="hljs-regexp">/你的仓库名@发布的版本号/</span>文件路径<br></code></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">[https://cdn.jsdelivr.net/gh/]你的用户名/你的仓库名@发布的版本号/文件路径<br></code></pre></td></tr></table></figure>
 
 <p>例如：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/banner.png<br></code></pre></td></tr></table></figure>
@@ -321,7 +323,7 @@
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@1.0/images/trhx.png<br>https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.1/css/style.css  <br>https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.3//The%20Pet%20Girl%20of%20Sakurasou.mp4<br></code></pre></td></tr></table></figure>
 
 <p>注意：版本号不是必需的，是为了区分新旧资源，如果不使用版本号，将会直接引用最新资源，除此之外还可以使用某个范围内的版本，查看所有资源等，具体使用方法如下：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs text">// 加载任何Github发布、提交或分支<br>https://cdn.jsdelivr.net/gh/user/repo@version/file<br><br>// 加载 jQuery v3.2.1<br>https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js<br><br>// 使用版本范围而不是特定版本<br>https://cdn.jsdelivr.net/gh/jquery/jquery@3.2/dist/jquery.min.js   https://cdn.jsdelivr.net/gh/jquery/jquery@3/dist/jquery.min.js<br> <br>// 完全省略该版本以获取最新版本<br>https://cdn.jsdelivr.net/gh/jquery/jquery/dist/jquery.min.js<br> <br>// 将“.min”添加到任何JS/CSS文件中以获取缩小版本，如果不存在，将为会自动生成<br>https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/core.min.js<br> <br>// 在末尾添加 / 以获取资源目录列表<br>https://cdn.jsdelivr.net/gh/jquery/jquery/<br></code></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs text">// 加载任何Github发布、提交或分支<br>https://cdn.jsdelivr.net/gh/user/repo@version/file<br><br>// 加载 jQuery v3.2.1<br>https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js<br><br>// 使用版本范围而不是特定版本<br>https://cdn.jsdelivr.net/gh/jquery/jquery@3.2/dist/jquery.min.js  <br>https://cdn.jsdelivr.net/gh/jquery/jquery@3/dist/jquery.min.js<br> <br>// 完全省略该版本以获取最新版本<br>https://cdn.jsdelivr.net/gh/jquery/jquery/dist/jquery.min.js<br> <br>// 将“.min”添加到任何JS/CSS文件中以获取缩小版本，如果不存在，将为会自动生成<br>https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/core.min.js<br> <br>// 在末尾添加 / 以获取资源目录列表<br>https://cdn.jsdelivr.net/gh/jquery/jquery/<br></code></pre></td></tr></table></figure>
 
 
 
@@ -400,18 +402,18 @@
 <h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><p>根据 <code>_config.yml</code> 中 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration#%E6%96%87%E7%AB%A0"><code>default_layout</code></a> 的设置，默认布局是 <code>post</code> 。当文章中的布局被禁用(<code>layout: false</code>)，它将不会使用主题处理。然而，它仍然会被任何可用的渲染引擎渲染：如果一篇文章是用 Markdown 写的，并且安装了 Markdown 渲染引擎（比如默认的 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>)，它将被渲染成HTML。</p>
 <p>除非通过 <code>disableNunjucks</code> 设置或 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/api/renderer#%E7%A6%81%E7%94%A8-Nunjucks-%E6%A0%87%E7%AD%BE">渲染引擎</a> 禁用，否则无论布局如何，<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins">标签插件</a> 总是被处理。</p>
 <h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs subunit">categories:<br>- Diary<br><span class="hljs-keyword">tags:</span><br>- PS3<br>- Games<br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">categories:</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">Diary</span><br><span class="hljs-attr">tags:</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">PS3</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">Games</span><br></code></pre></td></tr></table></figure>
 
 <h3 id="分类方法的分歧"><a href="#分类方法的分歧" class="headerlink" title="分类方法的分歧"></a>分类方法的分歧</h3><p>如果您有过使用 WordPress 的经验，就很容易误解 Hexo 的分类方式。WordPress 支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是 Hexo 不支持指定多个同级分类。下面的指定方法：</p>
-<figure class="highlight nestedtext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs nestedtext"><span class="hljs-attribute">categories</span><span class="hljs-punctuation">:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">Diary</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">Life</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">categories:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">Diary</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">Life</span><br></code></pre></td></tr></table></figure>
 
 <p>会使分类 <code>Life</code> 成为 <code>Diary</code> 的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</p>
 <p>如果你需要为文章添加多个分类，可以尝试以下 list 中的方法。</p>
-<figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ldif"><span class="hljs-attribute">categories</span>:<br><span class="hljs-literal">-</span> [Diary, PlayStation]<br><span class="hljs-literal">-</span> [Diary, Games]<br><span class="hljs-literal">-</span> [Life]<br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">categories:</span><br><span class="hljs-bullet">-</span> [<span class="hljs-string">Diary</span>, <span class="hljs-string">PlayStation</span>]<br><span class="hljs-bullet">-</span> [<span class="hljs-string">Diary</span>, <span class="hljs-string">Games</span>]<br><span class="hljs-bullet">-</span> [<span class="hljs-string">Life</span>]<br></code></pre></td></tr></table></figure>
 
 <p>此时这篇文章同时包括三个分类： <code>PlayStation</code> 和 <code>Games</code> 分别都是父分类 <code>Diary</code> 的子分类，同时 <code>Life</code> 是一个没有子分类的分类。</p>
 <h2 id="JSON-Front-matter"><a href="#JSON-Front-matter" class="headerlink" title="JSON Front-matter"></a>JSON Front-matter</h2><p>除了 YAML 外，你也可以使用 JSON 来编写 Front-matter，只要将 <code>---</code> 代换成 <code>;;;</code> 即可。</p>
-<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs llvm"><span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Hello World&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;2013/7/13 20:46:25&quot;</span><br><span class="hljs-comment">;;;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;title&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Hello World&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;date&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;2013/7/13 20:46:25&quot;</span><br>;;;<br></code></pre></td></tr></table></figure>
 
 
 
@@ -715,15 +717,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/24/hello-world/" title="Hello World">
+                      <a href="/2023/08/26/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" title="Hexo Fluid主题配置教程">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hello World</span>
+                        <span class="hidden-mobile">Hexo Fluid主题配置教程</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/08/24/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
