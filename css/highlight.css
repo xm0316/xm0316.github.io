@@ -5,9 +5,7 @@ pre code.hljs {
 }
 
 code.hljs {
-    padding: 3px 5px;
-    background: #e7e9db;
-    color: #4f424c
+    padding: 3px 5px
 }
 
 .hljs {
@@ -15,7 +13,6 @@ code.hljs {
     color: #4f424c
 }
 
-/* 注释,引用 */
 .hljs-comment,
 .hljs-quote {
     color: #776e71
@@ -39,13 +36,13 @@ code.hljs {
 .hljs-number,
 .hljs-params,
 .hljs-type {
-    color: #f99b15
+    color: #f99a15e4
 }
 
 .hljs-attribute,
 .hljs-section,
 .hljs-title {
-    color: #fec418
+    color: #e4b730ec
 }
 
 .hljs-addition,

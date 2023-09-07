@@ -14,25 +14,27 @@
   
   <meta name="theme-color" content="#144c7c">
   <meta name="author" content="Lee">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Git">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post.">
+    <meta name="description" content="Git 的一些命令操作">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://xm0316.github.io/2023/08/24/hello-world/index.html">
+<meta property="og:title" content="Git commands">
+<meta property="og:url" content="https://xm0316.github.io/2023/08/28/Git-commands/index.html">
 <meta property="og:site_name" content="Lee_Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post.">
+<meta property="og:description" content="Git 的一些命令操作">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-23T22:46:13.000Z">
-<meta property="article:modified_time" content="2023-09-02T05:32:18.647Z">
+<meta property="og:image" content="https://xm0316.github.io/img/article_index/GitHub_Logo.png">
+<meta property="article:published_time" content="2023-08-28T01:49:00.000Z">
+<meta property="article:modified_time" content="2023-09-07T22:39:25.047Z">
 <meta property="article:author" content="Lee">
 <meta property="article:tag" content="Blog">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xm0316.github.io/img/article_index/GitHub_Logo.png">
   
   
   
-  <title>Hello World - Lee_Blog</title>
+  <title>Git commands - Lee_Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -192,13 +194,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/wallhaven-sea.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/banner.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Git commands"></span>
           
         </div>
 
@@ -214,8 +216,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-24 06:46" pubdate>
-          2023年8月24日 早上
+        <time datetime="2023-08-28 09:49" pubdate>
+          2023年8月28日 上午
         </time>
       </span>
     
@@ -226,7 +228,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          1.6k 字
         
       </span>
     
@@ -237,7 +239,7 @@
         
         
         
-          4 分钟
+          14 分钟
         
       </span>
     
@@ -274,24 +276,217 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">Git commands</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <p>Git 的一些命令操作</p>
+<span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img src="./GitHub_Logo.png" srcset="https://cdn.jsdelivr.net/gh/xm0316/xm0316.github.io/img/loading.gif" lazyload></p>
+<h1 id="Git-的操作"><a href="#Git-的操作" class="headerlink" title="Git 的操作"></a>Git 的操作</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装设置"><a href="#安装设置" class="headerlink" title="安装设置"></a>安装设置</h3><ul>
+<li>git config –global user.name&#x2F;email “…”</li>
+</ul>
+<h3 id="与-GitHub-关联"><a href="#与-GitHub-关联" class="headerlink" title="与 GitHub 关联"></a>与 GitHub 关联</h3><ul>
+<li><p>生成 ssh key</p>
+<ul>
+<li>ssh-key -t rsa -C “…email”</li>
+</ul>
+</li>
+<li><p>repository 关联</p>
+<ul>
+<li><p>Remote：create a new repo</p>
+</li>
+<li><p>Local：关联</p>
+<ul>
+<li><p>http 协议 or ssh 协议</p>
+<ul>
+<li>https 协议每次 push 需要输入密码</li>
+</ul>
+</li>
+<li><p>associate</p>
+<ul>
+<li>git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#99;&#111;&#109;</a>：xm0316&#x2F;Git_command.git<br>git branch -M main<br>git push -u origin main # origin：远程仓库名，main：本地仓库主分支名</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>删除关联关系</p>
+<ul>
+<li><code>git remote -v</code> 查看远程库信息</li>
+<li>git remote rm origin(远程分支名称)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><h3 id="创建版本库-repo"><a href="#创建版本库-repo" class="headerlink" title="创建版本库 repo"></a>创建版本库 repo</h3><ul>
+<li>git init</li>
+</ul>
+<h3 id="本地文件提交"><a href="#本地文件提交" class="headerlink" title="本地文件提交"></a>本地文件提交</h3><ul>
+<li><p>添加文件到暂存区</p>
+<ul>
+<li><p>git add “…”</p>
+<ul>
+<li>git add –all</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>提交文件到版本库(本地仓库)</p>
+<ul>
+<li><p>git commit -m “…提交说明”</p>
+<ul>
+<li>git commit -am “…提交说明”，直接提交到版本库</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="文件比较-diff"><a href="#文件比较-diff" class="headerlink" title="文件比较 diff"></a>文件比较 diff</h3><ul>
+<li><p>git status</p>
+<ul>
+<li>掌握仓库当前的状态&#x2F;变化情况</li>
+</ul>
+</li>
+<li><p>git diff</p>
+<ul>
+<li><p>查看文件在工作目录与暂存区的差别。<br>如果还没 add 进暂存区，则查看文件自身修改前后的差别。</p>
+<ul>
+<li>git diff –stat： 显示变化摘要而非整个 diff</li>
+</ul>
+</li>
+<li><p>git diff –staged&#x2F;cached</p>
+<ul>
+<li>查看暂存区与版本库的区别</li>
+</ul>
+</li>
+<li><p>git diff <commit> <filename></p>
+<ul>
+<li>查看工作目录同 Git 仓库指定 commit 的内容的差异。</li>
+<li><commit>&#x3D;HEAD 时：查看工作目录同最近一次 commit 的内容的差异。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="查看提交日志"><a href="#查看提交日志" class="headerlink" title="查看提交日志"></a>查看提交日志</h3><ul>
+<li><p>git log</p>
+<ul>
+<li>显示从最近到最远的全部日志</li>
+</ul>
+</li>
+<li><p>git log –pretty&#x3D;oneline</p>
+<ul>
+<li>单行显示日志(还有其他的参数)</li>
+</ul>
+</li>
+<li><p>git reflog</p>
+<ul>
+<li><p>显示可引用的历史版本记录</p>
+<ul>
+<li>按提交的命令显示，可以查看任意的提交点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="版本回退-reset"><a href="#版本回退-reset" class="headerlink" title="版本回退 reset"></a>版本回退 reset</h3><ul>
+<li><p>在 Git 中，用 HEAD 代表当前版本，上一个版本就是<code>HEAD^</code>，再上一个版本就是<code>HEAD^^</code>，依次类推,更多的可以使用<code>HEAD~100</code></p>
+</li>
+<li><p>git reset –hard <commit_id></p>
+<ul>
+<li>回到指定的已提交版本，丢弃版本库的变化</li>
+</ul>
+</li>
+</ul>
+<h3 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h3><ul>
+<li><p>git 跟踪并管理的是修改(暂存区的文件)</p>
+</li>
+<li><p>git diff HEAD – <filename></p>
+<ul>
+<li>查看工作区和版本库最新版本的区别，指定版本见之前的命令</li>
+</ul>
+</li>
+</ul>
+<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><ul>
+<li><p>git status：检查文件变化&#x2F;修改情况</p>
+</li>
+<li><p>丢弃工作区的修改</p>
+<ul>
+<li><p>git check –<file></p>
+<ul>
+<li>git restore <file></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>丢弃暂存区的修改</p>
+<ul>
+<li><p>git reset HEAD <file></p>
+<ul>
+<li>git restore –stage <file></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>丢弃版本库的修改</p>
+<ul>
+<li><p>git reset –hard <commit_id></p>
+<ul>
+<li><code>--- HEAD^</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><ul>
+<li><p>从版本库中删除一个文件</p>
+<ul>
+<li>git rm <file></li>
+<li>并且提交：git commit -m “…”</li>
+</ul>
+</li>
+<li><p>从版本库恢复文件</p>
+<ul>
+<li>git checkout – <file></li>
+<li>用版本库的版本替换工作区的版本</li>
+</ul>
+</li>
+</ul>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h3><ul>
+<li><p>GitHub 上的仓库既可以作为备份，又可以让其他人通过该仓库来协作</p>
+</li>
+<li><p>关联远程仓库</p>
+<ul>
+<li>git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a>：账户名&#x2F;仓库名.git</li>
+</ul>
+</li>
+<li><p>首次推送</p>
+<ul>
+<li>git branch -M main (给本地仓库改名)<br>git push -u origin master</li>
+<li>git push origin master</li>
+</ul>
+</li>
+<li><p>SSH 警告</p>
+<ul>
+<li>首次使用 Git 的 clone 或 push 命令连接 github 时，会提示你验证 RSA key 信息</li>
+</ul>
+</li>
+</ul>
+<h3 id="删除远程仓库"><a href="#删除远程仓库" class="headerlink" title="删除远程仓库"></a>删除远程仓库</h3><ul>
+<li><p>查看远程库信息</p>
+<ul>
+<li>git remote -v</li>
+</ul>
+</li>
+<li><p>解除远程库和本地库的绑定关系</p>
+<ul>
+<li>git remote rm origin</li>
+</ul>
+</li>
+</ul>
 
                 
               </div>
@@ -310,12 +505,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  <a href="/categories/Blog/" class="category-chain-item">Blog</a>
   
   
     <span>></span>
     
-  <a href="/categories/Notes/Hexo/" class="category-chain-item">Hexo</a>
+  <a href="/categories/Blog/Git/" class="category-chain-item">Git</a>
   
   
 
@@ -334,7 +529,7 @@
       
         <a href="/tags/Blog/" class="print-no-link">#Blog</a>
       
-        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
+        <a href="/tags/Git/" class="print-no-link">#Git</a>
       
     </div>
   
@@ -346,8 +541,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://xm0316.github.io/2023/08/24/hello-world/</div>
+      <div>Git commands</div>
+      <div>https://xm0316.github.io/2023/08/28/Git-commands/</div>
     </div>
     <div class="license-meta">
       
@@ -359,7 +554,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月24日</div>
+          <div>2023年8月28日</div>
         </div>
       
       
@@ -391,18 +586,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/27/Hexo-Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" title="Hexo Fluid主题配置">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hexo Fluid主题配置</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/24/hexo/" title="Hexo">
-                        <span class="hidden-mobile">Hexo</span>
+                      <a href="/2023/08/27/Windows%E4%B8%AD%E7%9A%84tree%E5%91%BD%E4%BB%A4/" title="Windows中的tree命令.md">
+                        <span class="hidden-mobile">Windows中的tree命令.md</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
